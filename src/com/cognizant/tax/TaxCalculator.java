@@ -4,6 +4,7 @@ public class TaxCalculator {
 	float basicSalary ;
 	boolean citizenship ;
 	float tax;
+	
 	TaxCalculator(boolean c , float salary){
 		this.basicSalary=salary;
 		this.citizenship=c;

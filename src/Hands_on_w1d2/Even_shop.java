@@ -2,14 +2,13 @@ package Hands_on_w1d2;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 
 public class Even_shop {
 	
-	ArrayList<Integer> A1 = new ArrayList<Integer>();
-	ArrayList<Integer> A2 = new ArrayList<Integer>();
+	ArrayList<Integer> A1 = new ArrayList<>();
+	ArrayList<Integer> A2 = new ArrayList<>();
 	
-	ArrayList storeEvenNumbers(int N) {
+	ArrayList<Integer> storeEvenNumbers(int N) {
 		
 	
 	for(int i =0; i<=N ;i++) {
@@ -21,7 +20,7 @@ public class Even_shop {
 				
 	}
 	
-	  ArrayList printEvenNumbers() {
+	  ArrayList<Integer> printEvenNumbers() {
 		
 		  Iterator<Integer> it = this.A1.iterator();
 		  while(it.hasNext()) {
