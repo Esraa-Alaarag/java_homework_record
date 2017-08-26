@@ -1,4 +1,4 @@
-package Hands_on_w1d2;
+package JavaAssignment_PartA;
 
 import java.util.Scanner;
 
@@ -10,7 +10,6 @@ public class ArrayService {
 //	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayService obj = new ArrayService();
 		int [] myarray;
 		int value , length;
 		Scanner console=new Scanner(System.in);
