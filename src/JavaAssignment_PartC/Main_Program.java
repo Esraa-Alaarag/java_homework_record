@@ -8,10 +8,8 @@ public class Main_Program {
 		// TODO Auto-generated method stub
 		Scanner console=new Scanner(System.in);
 		
-		System.out.println("Enter your start number \n");
+		System.out.println("Enter range of numbers ");
 		int start = console.nextInt();
-		
-		System.out.println("Enter your end number\n ");
 		int end = console.nextInt();
 		
 		Number_Program thread1 = new Number_Program("ODD", start, end);
@@ -28,7 +26,7 @@ public class Main_Program {
 		finally{
 			System.out.println("Odd numbers in given range"); 
 			thread1.display();
-			System.out.println("Even numbers in given range");
+			System.out.println("\nEven numbers in given range");
 			thread2.display();
 			console.close();
 		}

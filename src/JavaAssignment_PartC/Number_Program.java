@@ -17,42 +17,29 @@ public class Number_Program extends Thread{
 	
 	@Override
 	public void run() {
-		System.out.println("inside the run");
+		//System.out.println("inside the run");
 		for(int i=this.start ; i<=this.end;i++)
 		{
 			if(this.numberType=="ODD")
 			{
-				try {
-					if(i%2==1) {
-						numberList.add(i);
-						System.out.println("odd Thread number="+i);
-						sleep(1000);
-						} 
-				}
-				catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				
+				if(i%2==1) {
+					numberList.add(i);
+					//System.out.println("odd Thread number="+i);
+				} 	
 			}
 			else 
 			{
-				try {
-					if(i%2==0) {
-						numberList.add(i);
-						System.out.println("Even Thread number="+i);
-						sleep(1000);
-						} 
-					}catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+				if(i%2==0) {
+					numberList.add(i);
+					//System.out.println("Even Thread number="+i);
+				} 
 			}
 				
 		}
 			
 	}
 	void display() {
-		System.out.println(this.numberList);
+		for(int i=0 ;i<this.numberList.size();i++)
+		System.out.print(this.numberList.get(i)+" ");
 	}
 }
