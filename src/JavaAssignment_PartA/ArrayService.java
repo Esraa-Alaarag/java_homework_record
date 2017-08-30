@@ -6,13 +6,13 @@ public class ArrayService {
 
 	public static void main(String[] args) {
 		
-		//Initialize the array 
+		//declaring the array 
 		int [] myarray;
 		
-		//Initialize variable to store the input temporary . and the array length
+		//declaring variable to store the input temporary . and the array length
 		int value , length;
 		
-		//Initialize the scanner object
+		//declaring the scanner object
 		Scanner console=new Scanner(System.in);
 		
 		//input the size of the array and assign the array length to that size
